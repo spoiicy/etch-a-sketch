@@ -1,0 +1,26 @@
+.parent-grid-element{
+    display: flex;
+    outline: 1px solid black;
+    flex: 1;
+}
+
+.child-grid-element{
+    outline: 1px solid black;
+    flex: 1;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+    margin: 100px auto;
+    flex-wrap: wrap;
+    outline: 2px solid black;
+
+}
