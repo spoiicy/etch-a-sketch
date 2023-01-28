@@ -1,6 +1,11 @@
 
-let grid_size = prompt("Enter the size of grid");
 
+
+let grid_size = prompt("Enter the size of grid");
+if(grid_size>100){
+    alert('Enter a number less than 100');
+    location.reload();
+}
 
 let container = document.querySelector('.container');
 
@@ -18,3 +23,18 @@ for(let i = 0;i<grid_size;i++){
     
     }
 }
+
+
+
+
+let grid_elements = document.querySelectorAll('.child-grid-element');
+grid_elements.forEach((element) => {
+    addEventListener('mouseover', function(e){
+
+        if(e.target.className == 'child-grid-element') {
+            e.target.style.background = "#" +Math.floor(Math.random()*16777215).toString(16);
+        }
+        
+    });
+});
+
