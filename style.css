@@ -1,11 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=VT323&display=swap');
+
+body{
+    font-family: 'VT323', monospace;
+    background-color: beige;
+}
+
+h1{
+    text-align: center;
+    padding: 50px 0 0;
+    font-size: 60px;
+}
+
+
 .parent-grid-element{
     display: flex;
-    outline: 1px solid black;
     flex: 1;
 }
 
 .child-grid-element{
-    outline: 1px solid black;
     flex: 1;
 }
 
@@ -15,12 +27,15 @@
 }
 
 .container{
+    background-color: whitesmoke;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 2px;
     display: flex;
     flex-direction: column;
     width: 500px;
     height: 500px;
-    margin: 100px auto;
+    margin: 50px auto ;
     flex-wrap: wrap;
-    outline: 2px solid black;
+    
 
 }
